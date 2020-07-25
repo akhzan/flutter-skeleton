@@ -1,0 +1,1 @@
+enum EnvType { PRODUCTION, STAGING }
