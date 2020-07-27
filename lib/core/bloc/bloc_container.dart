@@ -1,0 +1,36 @@
+import 'package:fcclone/journey/landing/presentation/bloc/landing_bloc.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+class BlocContainer extends StatefulWidget {
+  final Widget child;
+  BlocContainer({this.child});
+
+  @override
+  _BlocContainerState createState() => _BlocContainerState();
+}
+
+class _BlocContainerState extends State<BlocContainer> {
+  LandingBloc landingBloc;
+
+  @override
+  void initState() {
+    landingBloc = LandingBloc();
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    landingBloc.close();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: MultiBlocProvider(
+          providers: [BlocProvider<LandingBloc>(create: (_) => landingBloc)],
+          child: widget.child),
+    );
+  }
+}

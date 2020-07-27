@@ -1,5 +1,6 @@
+import 'package:fcclone/core/bloc/bloc_container.dart';
 import 'package:fcclone/core/router/router.dart';
-import 'package:fcclone/features/landing/presentation/screens/landing.dart';
+import 'package:fcclone/journey/landing/presentation/screens/landing.dart';
 import 'package:flutter/material.dart';
 
 class App extends StatefulWidget {
@@ -20,11 +21,13 @@ class _AppState extends State<App> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      initialRoute: Landing.PATH,
-      onGenerateRoute: router.router.generator,
+    return BlocContainer(
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Demo',
+        initialRoute: Landing.PATH,
+        onGenerateRoute: router.router.generator,
+      ),
     );
   }
 }
