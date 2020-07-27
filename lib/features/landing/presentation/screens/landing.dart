@@ -1,4 +1,4 @@
-import 'package:fcclone/journey/landing/presentation/bloc/landing_bloc.dart';
+import 'package:fcclone/features/landing/presentation/bloc/landing_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
