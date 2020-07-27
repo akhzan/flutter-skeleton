@@ -1,12 +1,7 @@
 import 'package:fcclone/core/injector/injector.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
-// import '../data/datasources/forecast_data_source.dart';
-// import '../data/repositories/forecast_repository_impl.dart';
 import '../domain/entities/forecast.dart';
-// import '../domain/entities/location.dart';
-// import '../domain/usecases/get_forecast.dart';
 import './forecast_changenotifier.dart';
 
 class WeatherForecastWidget extends StatelessWidget {
