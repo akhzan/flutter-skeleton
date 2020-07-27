@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:fcclone/app/init.dart';
 import 'package:fcclone/core/env/env.dart';
+import 'package:fcclone/core/injector/injector.dart';
 import 'package:flutter/material.dart';
 
 void printError(FlutterErrorDetails details) {
@@ -11,6 +12,8 @@ void printError(FlutterErrorDetails details) {
 void main() {
   ErrorWidget.builder = (FlutterErrorDetails details) => Container();
   FlutterError.onError = printError;
+  Injector.setup();
+
   runZoned(() {
     runApp(Init(
       configENV: () => Env().setStaging(),
