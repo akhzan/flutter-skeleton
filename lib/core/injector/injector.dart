@@ -1,3 +1,4 @@
+import 'package:fcclone/core/injector/configurations/forecast_configurations.dart';
 import 'package:fcclone/features/forecast/data/datasources/forecast_data_source.dart';
 import 'package:fcclone/features/forecast/data/repositories/forecast_repository_impl.dart';
 import 'package:fcclone/features/forecast/domain/entities/location.dart';
@@ -20,25 +21,13 @@ abstract class Injector {
   static final resolve = container.resolve;
 
   void _configure() {
-    _configureWeatherForecastFeatureModuleModule();
-  }
-
-  void _configureWeatherForecastFeatureModuleModule() {
-    _configureWeatherForecastFeatureModuleInstances();
-    _configureWeatherForecastFeatureModuleFactories();
-  }
-
-  void _configureWeatherForecastFeatureModuleInstances() {
-    container.registerInstance(Location(latitude: 0, longitude: 0));
-    container.registerInstance(
-      Location(latitude: 51.5073, longitude: -0.1277),
-      name: 'London',
-    );
+    ForecastConfigurations(container: container).configure();
+    _configureFactories();
   }
 
   @Register.factory(WeatherForecastChangeNotifier)
   @Register.factory(GetForecast, resolvers: {Location: 'London'})
   @Register.factory(ForecastRepository, from: ForecastRepositoryImpl)
   @Register.factory(ForecastDataSource, from: FakeForecastDataSource)
-  void _configureWeatherForecastFeatureModuleFactories();
+  void _configureFactories();
 }

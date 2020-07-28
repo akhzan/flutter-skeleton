@@ -7,7 +7,7 @@ part of 'injector.dart';
 // **************************************************************************
 
 class _$Injector extends Injector {
-  void _configureWeatherForecastFeatureModuleFactories() {
+  void _configureFactories() {
     final KiwiContainer container = KiwiContainer();
     container.registerFactory(
         (c) => WeatherForecastChangeNotifier(c<GetForecast>()));

@@ -1,7 +1,6 @@
 import 'package:fcclone/core/bloc/bloc_container.dart';
 import 'package:fcclone/core/router/router.dart';
 import 'package:fcclone/features/forecast/presentation/forecast_widget.dart';
-import 'package:fcclone/features/landing/presentation/screens/landing.dart';
 import 'package:flutter/material.dart';
 
 class App extends StatefulWidget {
