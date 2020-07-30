@@ -21,8 +21,8 @@ class _BlocContainerState extends State<BlocContainer> {
 
   @override
   void dispose() {
-    super.dispose();
     landingBloc.close();
+    super.dispose();
   }
 
   @override
