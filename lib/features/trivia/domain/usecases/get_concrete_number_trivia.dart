@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
 import 'package:fcclone/core/base/usecase/usecase.dart';
-import 'package:fcclone/core/errors/failures.dart';
+import 'package:fcclone/core/errors/failures_c.dart';
 import 'package:fcclone/features/trivia/domain/entities/number_trivia.dart';
 import 'package:fcclone/features/trivia/domain/repositories/number_trivia_repository.dart';
 import 'package:meta/meta.dart';
