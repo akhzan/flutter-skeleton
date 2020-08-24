@@ -13,7 +13,7 @@ class Env {
   EnvType environmentType;
 
   void setProduction() {
-    baseUrl = 'https://secure.fazzcard.com';
+    baseUrl = 'https://app.com';
     environmentType = EnvType.PRODUCTION;
   }
 
