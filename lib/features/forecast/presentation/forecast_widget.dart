@@ -1,6 +1,7 @@
-import 'package:fcclone/core/injector/injector.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+import '../../../core/injector/injector.dart';
 import '../domain/entities/forecast.dart';
 import './forecast_changenotifier.dart';
 

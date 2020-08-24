@@ -1,9 +1,10 @@
 import 'dart:async';
 
-import 'package:fcclone/app/init.dart';
-import 'package:fcclone/core/env/env.dart';
-import 'package:fcclone/core/injector/injector.dart';
 import 'package:flutter/material.dart';
+
+import 'app/init.dart';
+import 'core/env/env_example.dart';
+import 'core/injector/injector.dart';
 
 void printError(FlutterErrorDetails details) {
   print('Flutter error caught : ' + details.exception);

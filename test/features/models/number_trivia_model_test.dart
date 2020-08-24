@@ -1,9 +1,9 @@
 import 'dart:convert';
 
-import 'package:fcclone/features/trivia/data/models/number_trivia_model.dart';
-import 'package:fcclone/features/trivia/domain/entities/number_trivia.dart';
 import 'package:flutter_test/flutter_test.dart';
 
+import '../../../lib/features/trivia/data/models/number_trivia_model.dart';
+import '../../../lib/features/trivia/domain/entities/number_trivia.dart';
 import '../../fixtures/fixture_reader.dart';
 
 void main() {

@@ -1,9 +1,10 @@
 import 'package:dartz/dartz.dart';
-import 'package:fcclone/features/trivia/domain/entities/number_trivia.dart';
-import 'package:fcclone/features/trivia/domain/repositories/number_trivia_repository.dart';
-import 'package:fcclone/features/trivia/domain/usecases/get_concrete_number_trivia.dart';
 import 'package:mockito/mockito.dart';
 import 'package:flutter_test/flutter_test.dart';
+
+import '../../../lib/features/trivia/domain/entities/number_trivia.dart';
+import '../../../lib/features/trivia/domain/repositories/number_trivia_repository.dart';
+import '../../../lib/features/trivia/domain/usecases/get_concrete_number_trivia.dart';
 
 class MockNumberTriviaRepository extends Mock
     implements NumberTriviaRepository {}

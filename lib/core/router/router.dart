@@ -1,7 +1,8 @@
-import 'package:fcclone/features/forecast/presentation/forecast_widget.dart';
-import 'package:fcclone/features/landing/presentation/screens/landing.dart';
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
+
+import '../../features/forecast/presentation/forecast_widget.dart';
+import '../../features/landing/presentation/screens/landing.dart';
 
 class Routers {
   Router router = new Router();

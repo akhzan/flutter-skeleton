@@ -1,4 +1,4 @@
-import 'package:fcclone/features/trivia/data/models/number_trivia_model.dart';
+import '../models/number_trivia_model.dart';
 
 abstract class NumberTriviaLocalDataSource {
   Future<NumberTriviaModel> getLastNumberTrivia();

@@ -1,5 +1,6 @@
-import 'package:fcclone/features/forecast/domain/entities/location.dart';
 import 'package:kiwi/kiwi.dart';
+
+import '../../../features/forecast/domain/entities/location.dart';
 
 class ForecastConfigurations {
   final KiwiContainer container;

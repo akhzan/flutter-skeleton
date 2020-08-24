@@ -1,5 +1,6 @@
-import 'package:fcclone/core/env/env_type.dart';
 import 'package:flutter/foundation.dart';
+
+import 'env_type.dart';
 
 class Env {
   Env._();
@@ -13,7 +14,7 @@ class Env {
   EnvType environmentType;
 
   void setProduction() {
-    baseUrl = 'https://secure.fazzcard.com';
+    baseUrl = 'https:app.com';
     environmentType = EnvType.PRODUCTION;
   }
 

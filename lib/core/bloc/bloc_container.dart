@@ -1,6 +1,7 @@
-import 'package:fcclone/features/landing/presentation/bloc/landing_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../features/landing/presentation/bloc/landing_bloc.dart';
 
 class BlocContainer extends StatefulWidget {
   final Widget child;
