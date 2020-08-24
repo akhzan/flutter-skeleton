@@ -1,9 +1,8 @@
 import 'package:dartz/dartz.dart';
-
-import '../../../../core/base/usecase/usecase.dart';
-import '../../../../core/errors/failure.dart';
-import '../entities/number_trivia.dart';
-import '../repositories/number_trivia_repository.dart';
+import 'package:fcclone/core/base/usecase/usecase.dart';
+import 'package:fcclone/core/errors/failures_c.dart';
+import 'package:fcclone/features/trivia/domain/entities/number_trivia.dart';
+import 'package:fcclone/features/trivia/domain/repositories/number_trivia_repository.dart';
 
 class GetConcreteNumberTrivia extends UseCase<NumberTrivia, NoParams> {
   final NumberTriviaRepository repository;

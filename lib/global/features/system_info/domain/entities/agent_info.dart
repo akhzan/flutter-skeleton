@@ -1,4 +1,4 @@
-import 'device.dart';
+import 'package:fcclone/global/features/system_info/domain/entities/device.dart';
 
 class AgentInfo {
   final String appName;

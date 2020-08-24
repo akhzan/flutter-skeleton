@@ -1,8 +1,7 @@
+import 'package:fcclone/core/bloc/bloc_container.dart';
+import 'package:fcclone/core/router/router.dart';
+import 'package:fcclone/features/forecast/presentation/forecast_widget.dart';
 import 'package:flutter/material.dart';
-
-import '../core/bloc/bloc_container.dart';
-import '../core/router/router.dart';
-import '../features/forecast/presentation/forecast_widget.dart';
 
 class App extends StatefulWidget {
   App({Key key}) : super(key: key);

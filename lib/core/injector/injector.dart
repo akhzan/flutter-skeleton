@@ -1,12 +1,11 @@
+import 'package:fcclone/core/injector/configurations/forecast_configurations.dart';
+import 'package:fcclone/features/forecast/data/datasources/forecast_data_source.dart';
+import 'package:fcclone/features/forecast/data/repositories/forecast_repository_impl.dart';
+import 'package:fcclone/features/forecast/domain/entities/location.dart';
+import 'package:fcclone/features/forecast/domain/repositories/forecast_repository.dart';
+import 'package:fcclone/features/forecast/domain/usecases/get_forecast.dart';
+import 'package:fcclone/features/forecast/presentation/forecast_changenotifier.dart';
 import 'package:kiwi/kiwi.dart';
-
-import '../../features/forecast/data/datasources/forecast_data_source.dart';
-import '../../features/forecast/data/repositories/forecast_repository_impl.dart';
-import '../../features/forecast/domain/entities/location.dart';
-import '../../features/forecast/domain/repositories/forecast_repository.dart';
-import '../../features/forecast/domain/usecases/get_forecast.dart';
-import '../../features/forecast/presentation/forecast_changenotifier.dart';
-import 'configurations/forecast_configurations.dart';
 
 part 'injector.g.dart';
 

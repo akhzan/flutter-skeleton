@@ -1,6 +1,5 @@
+import 'package:fcclone/features/trivia/domain/entities/number_trivia.dart';
 import 'package:meta/meta.dart';
-
-import '../../domain/entities/number_trivia.dart';
 
 class NumberTriviaModel extends NumberTrivia {
   final String text;

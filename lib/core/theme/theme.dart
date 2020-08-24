@@ -1,6 +1,5 @@
+import 'package:fcclone/core/theme/styles.dart';
 import 'package:flutter/material.dart';
-
-import 'styles.dart';
 
 final ThemeData theme = _buildTheme();
 
